@@ -1,0 +1,58 @@
+.navbar {
+  background-color:#C8AE7D ;
+}
+
+.imga {
+  float: left;
+  border-radius: 1em;
+  text-align: center;
+
+}
+.neon-nav{
+  color: #EAC696;
+  
+}
+
+.btn {
+  margin: 1px;
+  margin-right: 4px;
+  border-style: none;
+  background: linear-gradient(#EAC696,#E6FFFD);
+
+}
+
+.dropdown-toggle {
+  background-color: transparent;
+  border-style: none;
+}
+
+.dropdown-item:hover {
+  background: linear-gradient(#EAC696,#E6FFFD);
+}
+.logbtn:hover{
+    background: linear-gradient(#EAC696,#E6FFFD);
+
+}
+.for-user{
+  margin-right: 28px;
+}
+
+@media screen and (min-width: 900px) {
+  .collapse {
+    position: absolute;
+    right: 1%;
+  }
+
+  .nav-item {
+    margin-right: 3px;
+    border-radius: 14%;
+  }
+
+  .nav-item:hover {
+    background: linear-gradient(#9a692f,#E6FFFD);
+  }
+
+  .dropdown-toggle:hover {
+    background-color: inherit;
+  }
+}

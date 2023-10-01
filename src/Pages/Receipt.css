@@ -1,0 +1,52 @@
+.main-box {
+  height: 45rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  color: #65451F;
+}
+
+.receipt-box {
+  margin-top: 4% ;
+  height: 90%;
+  width: 48%;
+  border-radius: 10px;
+  padding: 1.5%;
+  background: linear-gradient(to bottom right,
+  #c9ab75,  
+  #a88a52 60%
+    );
+    box-shadow: 5px 5px 15px  rgb(95, 91, 92);
+
+}
+
+.righted-items {
+  float: right;
+}
+.centered-items{
+margin-left: 35%;
+}
+.line{
+  background-color: black;
+  height: 1px;
+  margin: 2% 0 2% 0;
+  padding: 0;
+}
+.title{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 1.8rem;
+}
+@media screen and (max-width:600px){
+  .receipt-box {
+    margin-top: 4%;
+    height: 100%;
+    width: 98%;
+    border-radius: 10px;
+    padding: 4%;
+    
+  }
+  .main-box {
+    height: 35rem;
+  }
+}
