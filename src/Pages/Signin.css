@@ -1,9 +1,10 @@
 .form-body {
-    height: 30rem;
+    height: 35rem;
     width: 90%;
     margin: 3% 5% 0 5%;
     display: flex;
     border-radius: 20px;
+    padding-top: 5%;
 }
 
 .img-side {
@@ -15,7 +16,7 @@
 .form-side {
     width: 40%;
     height: 100%;
-    background: linear-gradient(to bottom right ,#C8AE7D, #765827 60%);
+    background: linear-gradient(to bottom right, #42047e, #07f49e 60%);
     border-radius: 0 20px 20px 0;
     display: flex;
     flex-direction: column;
@@ -34,8 +35,10 @@
     margin: 4% 0 2% 0;
     border-radius: 2px;
     border-style: none;
-    background-color: #C8AE7D;
+    background-color: #07f49e;
     color: rgb(0, 0, 0);
+    padding: 0 2%;
+    border-radius: 2%;
 }
 
 .submit-button {
@@ -43,45 +46,51 @@
     height: 10%;
     border-style: none;
     border-radius: 10px;
-    color: #765827;
-    background-color:#C8AE7D;
+    color: #07f49e;
+    background-color: #42047e;
     margin-top: 7%;
-
 }
-#head-sign{
+
+.submit-button:hover {
+    font-size: 1.2rem;
+}
+
+
+#head-sign {
     text-align: center;
 }
 
-.google{
+.google {
     text-align: center;
     margin-top: 6%;
     height: 11%;
     width: 100%;
-    color: #765827;
-    background-color: #C8AE7D;
+    color: #42047e;
+    background-color: #07f49e;
     border-radius: 10px;
 }
-.google:hover{
-    background-color: #765827;
-    color: #C8AE7D;
+
+.google:hover {
+    background-color: #42047e;
+    color: #07f49e;
 }
 
 @media screen and (max-width:600px) {
-        .img-side {
-                width: 0%;
-                height: 100%;
-                border-radius: 20px 0 0 20px;
-            }
+    .img-side {
+        width: 0%;
+        height: 100%;
+        border-radius: 20px 0 0 20px;
+    }
 
-.form-side {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom right, #C8AE7D, #765827 60%);
-    border-radius: 20px 20px 20px 20px;
-    display: flex;
-    flex-direction: column;
-    padding: 2% 5% 0 4%;
-    font-size: 1.2rem;
+    .form-side {
+        width: 100%;
+        height: 100%;
+        background: url(ice-naruto.jpg);
+        border-radius: 20px 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 2% 5% 0 4%;
+        font-size: 1.2rem;
 
-}
+    }
 }

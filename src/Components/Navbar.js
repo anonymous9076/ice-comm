@@ -45,7 +45,7 @@ const Navbar = () => {
               <li className="nav-item">
                 <Link
                   className="nav-link active neon"
-                  style={{ color: '65451F' }}
+                  style={{ color: 'white' }}
                   aria-current="page"
                   to="/"
                 >
@@ -56,7 +56,7 @@ const Navbar = () => {
               <li className="nav-item">
                 {/* flavour */}
                 <div className="dropdown neon">
-                  <button style={{ color: '#65451F' }}
+                  <button style={{ color: 'white' }}
                     className="dropdown-toggle neon my-2"
                     type="button"
                     data-bs-toggle="dropdown"
@@ -65,7 +65,7 @@ const Navbar = () => {
                   </button>
                   <ul
                     className="dropdown-menu"
-                    style={{ backgroundColor: "#765827" }}
+                    style={{ backgroundColor: "inherit" }}
                   >
                     <li>
                       <Link className="dropdown-item neon" to="/cupflavour">
@@ -83,17 +83,17 @@ const Navbar = () => {
               </li>
 
               <li className="nav-item neon-nav">
-                <Link className="nav-link active neon" style={{ color: '#65451F' }} to="/Receipt">
+                <Link className="nav-link active neon" style={{ color: 'white' }} to="/Receipt">
                   Receipt
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active  neon" style={{ color: '#65451F' }} to="/about">
+                <Link className="nav-link active  neon" style={{ color: 'white' }} to="/about">
                   About
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active neon" style={{ color: '#65451F' }} to="/ContactUs">
+                <Link className="nav-link active neon" style={{ color: 'white' }} to="/ContactUs">
                   Contact us
                 </Link>
               </li>

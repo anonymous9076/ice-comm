@@ -1,5 +1,9 @@
 .navbar {
-  background-color:#C8AE7D ;
+  background:#41047e81 ;
+  backdrop-filter: blur(3px);
+  position: absolute;
+  width: 100%;
+  
 }
 
 .imga {
@@ -9,15 +13,16 @@
 
 }
 .neon-nav{
-  color: #EAC696;
-  
+  color: #42047e;
 }
 
 .btn {
   margin: 1px;
   margin-right: 4px;
   border-style: none;
-  background: linear-gradient(#EAC696,#E6FFFD);
+  background: linear-gradient(#42047e,#07f49e);
+  color: white;
+  font-weight: 500;
 
 }
 
@@ -27,16 +32,21 @@
 }
 
 .dropdown-item:hover {
-  background: linear-gradient(#EAC696,#E6FFFD);
+  background: linear-gradient(#42047e,#07f49e);
 }
 .logbtn:hover{
-    background: linear-gradient(#EAC696,#E6FFFD);
-
+    background: linear-gradient(#42047e,#07f49e);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 .for-user{
   margin-right: 28px;
 }
-
+.nav-item{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
 @media screen and (min-width: 900px) {
   .collapse {
     position: absolute;
@@ -49,7 +59,7 @@
   }
 
   .nav-item:hover {
-    background: linear-gradient(#9a692f,#E6FFFD);
+    background: linear-gradient(#42047e,#07f49e);
   }
 
   .dropdown-toggle:hover {

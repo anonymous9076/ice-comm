@@ -4,19 +4,16 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  color: #65451F;
+  color: white;
 }
 
 .receipt-box {
-  margin-top: 4% ;
+  margin-top: 6% ;
   height: 90%;
   width: 48%;
   border-radius: 10px;
   padding: 1.5%;
-  background: linear-gradient(to bottom right,
-  #c9ab75,  
-  #a88a52 60%
-    );
+  background: linear-gradient(#42047e, #07f49e);
     box-shadow: 5px 5px 15px  rgb(95, 91, 92);
 
 }
@@ -39,14 +36,13 @@ margin-left: 35%;
 }
 @media screen and (max-width:600px){
   .receipt-box {
-    margin-top: 4%;
+    margin: 4% auto;
     height: 100%;
-    width: 98%;
+    width: 100%;
     border-radius: 10px;
-    padding: 4%;
-    
+    padding: 14%;
   }
   .main-box {
-    height: 35rem;
+    height: 40rem;
   }
 }

@@ -27,7 +27,7 @@ const Bodyflav = ({ name, id, price, liftingdata }) => {
                 <br></br>
 
                 <div className="detail-area">
-                    <span className="name neon " style={{ fontSize: "1.2em" ,color:'#765827' }}>
+                    <span className="name neon " style={{ fontSize: "1.2em" ,color:'white' }}>
                         <h5>  {name}</h5>
                         <Like></Like>
                     </span>
