@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Header from "./Components/Header.js";
 import Navbar from './Components/Navbar.js';
 import Footer1 from "./Components/Footer1.js";
 import './App.css';
@@ -54,7 +53,6 @@ function App() {
                     <Router>
                         <div className="top-things">
 
-                            <Header />
                             <Navbar user={findUser} />
                         </div>
                         <Routes>

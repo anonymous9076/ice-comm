@@ -71,7 +71,6 @@ const Signin = () => {
                         onClick={newUser}
                     >Submit</button>
 
-
                     <h3 className='google ' onClick={withGoogle}>sign in with google</h3>
                 </div>
 

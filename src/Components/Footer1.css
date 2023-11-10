@@ -21,12 +21,12 @@
 .supportdiv {
     width: 100%;
     height: 7em;
-    background: linear-gradient(#765827 40% , #a88a52);
+    background: linear-gradient( to right,#42047e 40% , #07f49e);
 
 }
 
 .totaldiv {
     margin-top: 2%;
     width: 100%;
-    background-color: #65451F;
+    background: linear-gradient( to right,#07f49e , #42047e 50%);
 }
