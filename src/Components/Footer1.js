@@ -1,6 +1,7 @@
 import React from 'react'
 import './Footer1.css'
 import { Link } from 'react-router-dom';
+import { FaInstagram,FaGithub,FaGlobe,FaLinkedin } from "react-icons/fa";
 const Footer1 = () => {
     return (
         <div className='totaldiv '>
@@ -8,22 +9,22 @@ const Footer1 = () => {
             </div>
                 <div >
                   <b className='join neon'>Follow Us</b>  
-                  <Link to='https://github.com/anonymous9076'>
-                  <img  className="social" src='/Pics/github.jpg' alt='' height='30em' width='30em'/>
+                  <Link to='/' className='link'>
+                  <FaInstagram className='social'></FaInstagram>
                   </Link>
-                  <Link to='https://www.instagram.com/__tushar__4369/'>
-                  <img className="social" src='/Pics/insta.png' alt='' height='30em' width='30em'/>
+                  <Link to='/' className='link'>
+                    <FaGithub className='social'></FaGithub>
                   </Link>
-                  <Link to='/'>
-                  <img className="social" src='/Pics/o face.png' alt='' height='30em' width='30em'/>
+                  <Link to='/' className='link'>
+                    <FaGlobe className='social' ></FaGlobe>
                   </Link>
-                  <Link to='/'>
-                  <img className="social" src='/Pics/linkin.png' alt='' height='30em' width='30em'/>
+                  <Link to='/' className='link'>
+                    <FaLinkedin className='social' ></FaLinkedin>
                   </Link>
                 </div>
               
                 <div className='supportdiv'>
-                <div  style={{ backgroundColor: '#' }}>
+                <div >
                     <ul>
                         <li>Terms & Conditions</li>
                         <li>24/7 support</li>

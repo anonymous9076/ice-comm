@@ -7,7 +7,7 @@ function Contact() {
         <h1 className='colorful'> Contact Me :</h1>
         <div className='contact-box'>
            
-                <form  className='cont-area' action='https://formspree.io/f/xnqeqnad' method='post'>
+                <form  className='cont-area' action='https://formspree.io/' method='post'>
                 <span className='enter-field'>
                     <label>First Name</label><br></br>
                     <input name='firstname' placeholder='Enter your firstname' ></input>

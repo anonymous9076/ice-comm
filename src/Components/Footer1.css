@@ -31,3 +31,7 @@
     width: 100%;
     background: rgb(185, 93, 57);
 }
+.link{
+    text-decoration: none;
+    color: white;
+}
