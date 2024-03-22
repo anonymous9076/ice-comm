@@ -1,8 +1,9 @@
 .select-text {
-    font-size: 4rem;
+    font-size: clamp(2rem,4vw,4.1rem);
     width: 100%;
     text-align: center;
     padding-top: 5rem;
+    color: brown;
 }
 
 .flavitem {
@@ -15,7 +16,7 @@
 .place-order {
     height: 32rem;
     width: 100%;
-    background: linear-gradient(#42047e, #07f49e);
+    background: rgb(185, 93, 57);
     margin-bottom: 2%;
     border-radius: 12px 0px 0px 12px;
 
@@ -24,7 +25,7 @@
 .buy {
     height: 10%;
     width: 11%;
-    background: linear-gradient(to left, #42047e, #07f49e);
+    background:#FFFDD0;
     float: right;
     position: absolute;
     border-radius: 8%;
@@ -65,7 +66,7 @@
 .first-title {
     height: 100%;
     width: 10%;
-    background: linear-gradient(#42047e, #07f49e);
+    background: brown;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,7 +75,7 @@
 .sec-container {
     height: 100%;
     width: 80%;
-    background: linear-gradient(#42047e, #07f49e);
+    background: brown;
 
     display: flex;
     align-items: center;
@@ -84,7 +85,7 @@
 .third-btn {
     height: 100%;
     width: 10%;
-    background: linear-gradient(#42047e, #07f49e);
+    background: brown;
 
     display: flex;
     justify-content: center;
@@ -95,7 +96,7 @@
 .buy-btn {
     height: 40%;
     width: 45%;
-    background: linear-gradient(#42047e, #07f49e);
+    background: brown;
     border-radius: 8%;
     border-style: none;
     font-size: 1.3rem;
@@ -141,7 +142,7 @@
     .sec-container {
         height: 100%;
         width: 90%;
-        background: linear-gradient(#42047e, #07f49e);
+        background: brown;
         display: flex;
         flex-wrap: wrap;
 
@@ -158,7 +159,7 @@
     .third-btn {
         height: 100%;
         width: 20%;
-        background: linear-gradient(#42047e, #07f49e);
+        background: brown;
 
         display: flex;
         justify-content: center;

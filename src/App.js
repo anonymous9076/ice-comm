@@ -19,7 +19,6 @@ import ClickContext from './context/ClickContext'
 import Signin from "./Pages/Signin.js";
 import Login from "./Pages/Login.js";
 import { app } from './Components/Firebase.js'
-import About from './Pages/About.js'
 import { getAuth, onAuthStateChanged } from 'firebase/auth'
 
 
@@ -61,7 +60,6 @@ function App() {
                           
                             <Route path="/" element={<Home />} />
                             <Route path="/Receipt" element={<Receipt />} />
-                            <Route path="/About" element={<About />} />
                             <Route path="/ContactUs" element={<ContactUs />} />
                             <Route path="/Cupflavour" element={<CupFlavour data={fromCup} />} />
                             <Route path="/Coneflavour" element={<ConeFlavour data={fromCup} />} />

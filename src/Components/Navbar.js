@@ -1,18 +1,9 @@
-import React,{useState,useEffect} from "react";
+import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-import { app } from './Firebase'
-import { getAuth, onAuthStateChanged ,signOut} from 'firebase/auth'
+
 const Navbar = () => {
-  const auth = getAuth(app)
-  const [user, setUser] = useState(null)
-  useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
-      if (user) {
-        setUser(user)
-      }
-    });
-  }, [auth])
+
   return (
     <>
       <nav className="navbar navbar-expand-lg ">
@@ -44,8 +35,8 @@ const Navbar = () => {
              
               <li className="nav-item">
                 <Link
-                  className="nav-link active neon"
-                  style={{ color: 'white' }}
+                  className="nav-link active "
+                  
                   aria-current="page"
                   to="/"
                 >
@@ -55,9 +46,9 @@ const Navbar = () => {
 
               <li className="nav-item">
                 {/* flavour */}
-                <div className="dropdown neon">
-                  <button style={{ color: 'white' }}
-                    className="dropdown-toggle neon my-2"
+                <div className="dropdown ">
+                  <button style={{ color: '#FFFDD0' ,fontWeight:500}}
+                    className="dropdown-toggle  my-2"
                     type="button"
                     data-bs-toggle="dropdown"
                   >
@@ -68,13 +59,13 @@ const Navbar = () => {
                     style={{ backgroundColor: "inherit" }}
                   >
                     <li>
-                      <Link className="dropdown-item neon" to="/cupflavour">
+                      <Link className="dropdown-item " to="/cupflavour">
                         Cup Flavour
                       </Link>
                     </li>
                     {/* <li><Link className="dropdown-item" to="/popflavour">Pop Flavour</Link></li> */}
                     <li>
-                      <Link className="dropdown-item neon" to="/coneflavour">
+                      <Link className="dropdown-item " to="/coneflavour">
                         Cone Flavour
                       </Link>
                     </li>
@@ -82,33 +73,17 @@ const Navbar = () => {
                 </div>
               </li>
 
-              <li className="nav-item neon-nav">
-                <Link className="nav-link active neon" style={{ color: 'white' }} to="/Receipt">
+              <li className="nav-item -nav">
+                <Link className="nav-link active "  to="/Receipt">
                   Receipt
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active  neon" style={{ color: 'white' }} to="/about">
-                  About
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link active neon" style={{ color: 'white' }} to="/ContactUs">
+                <Link className="nav-link active "  to="/ContactUs">
                   Contact us
                 </Link>
               </li>
             </ul>
-            <form className="d-flex " role="search">
-              {user ?
-                <>
-                  <h2 className="for-user neon ">Hi Buddy</h2>
-                  <button className="btn logbtn" onClick={() => signOut(auth)}>Log out</button>
-                </>
-                : <>
-                  <Link to="/Login" > <button className="btn logbtn">Log in</button></Link>
-                  <Link to="/Signin" ><button className="btn logbtn">Sign in</button></Link>
-                </>}
-            </form>
           </div>
         </div>
       </nav>

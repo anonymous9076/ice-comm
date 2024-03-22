@@ -13,7 +13,7 @@
 .form-side-log {
     width: 40%;
     height: 100%;
-    background: linear-gradient(#42047e, #07f49e);
+    background: rgb(185, 93, 57);
     border-radius: 20px 0 0 20px;
     display: flex;
     flex-direction: column;
@@ -26,8 +26,10 @@
     margin-top: 6%;
     height: 10.5%;
     width: 100%;
-    background-color: #42047e;
+    background-color: #fffdd0;
     border-radius: 10px;
+    text-decoration: none;
+
 }
 
 .google-log:hover {
@@ -38,13 +40,13 @@
     text-decoration: none;
     font-style: italic;
     margin-top: 20%;
-    color: #662f9d;
+    color: #fffdd0;
     font-size:1.5rem;
     font-weight: 600;
-
+    text-decoration: none;
 }
 .create:hover{
-    color: #42047e;
+    color: #fffdd0;
     font-size:1.6rem;
     font-weight: 600;
 }

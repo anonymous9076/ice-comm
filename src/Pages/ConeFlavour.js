@@ -61,7 +61,7 @@ const ConeFlavour = (props) => {
   return (
 
     <>
-      <p className='select-text neon'> Cone Ice-Cream </p>
+      <p className='select-text '> Cone Ice-Cream </p>
       <div className='flavitem'>
         {
           Database.map((flav) =>

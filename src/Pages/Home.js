@@ -1,14 +1,43 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import "./Home.css"
 import { Link } from 'react-router-dom'
-
+import { app } from '../Components/Firebase'
+import { getAuth, onAuthStateChanged,signOut } from 'firebase/auth'
 
 const Home = () => {
+  const auth = getAuth(app)
+  const [user, setUser] = useState(null)
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setUser(user)
+      }
+    });
+  }, [auth])
   return (
     <div className='main-body'>
-      <img className="paraimg" alt=' no img' src="./pics/ice-naruto.jpg" />
-      <h1 className='neon'>Best Cure for Anxiety</h1>
-      <h5 className='neon'>(with ice cream)</h5>
+     <div className='home-sec1'>
+      <div className='home-left'>
+        <h2>Best Care For<br></br> Anxiety</h2>
+        <p>"Indulge in Serenity: Soothe Your Soul with Every Scoop!"</p>
+        <form className="d-flex btn-container " role="search">
+              {user ?
+                <>
+                  <h2 className="for-user neon ">Hi Buddy</h2>
+                  <button className="btn logbtn" onClick={() => signOut(auth)}>Log out</button>
+                </>
+                : <>
+                  <Link to="/Login" > <button className="btn logbtn">Log in</button></Link>
+                  <Link to="/Signin" ><button className="btn logbtn">Sign in</button></Link>
+                </>}
+            </form>
+      </div>
+
+      <div className='home-right'>
+        <img id='home-img' src='./pics/home.jpg' alt='...'></img>
+      </div>
+
+     </div>
 
       <div className="ice-container" >
 

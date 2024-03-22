@@ -14,7 +14,12 @@ h1,h5{
    width: 100%;
 }
 .neon{
-   color: white;
-   text-shadow:3px 3px 5px #07f49e;
-   font-family:  sans-serif;
+   color: #FFFDD0;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-weight: 700;
+}
+.like-btn{
+   border: none;
+   background-color: #fffdd0;
+   color: brown;
 }

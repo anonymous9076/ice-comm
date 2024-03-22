@@ -1,7 +1,6 @@
 .itemdiv {
     width: 100%;
-    background: linear-gradient(#42047e, #07f49e);
-
+    background: #FFFDD0;
     height: 1.8rem;
     display: flex;
     justify-content: space-between;
@@ -21,7 +20,7 @@
 }
 .deletebtn{
     border-style: none;
-    background-color: #07f49e;
+    background-color: rgba(185, 93, 57, 0.523);
     border-radius: 25%;
     height: 10%;
     width: 4%;

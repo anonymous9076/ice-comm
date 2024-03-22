@@ -16,7 +16,7 @@
 .form-side {
     width: 40%;
     height: 100%;
-    background: linear-gradient(to bottom right, #42047e, #07f49e 60%);
+    background: rgb(185, 93, 57);
     border-radius: 0 20px 20px 0;
     display: flex;
     flex-direction: column;
@@ -35,8 +35,10 @@
     margin: 4% 0 2% 0;
     border-radius: 2px;
     border-style: none;
-    background-color: #07f49e;
-    color: rgb(0, 0, 0);
+    height: 8%;
+    background-color:#fffdd0;
+    color: brown;
+
     padding: 0 2%;
     border-radius: 2%;
 }
@@ -46,8 +48,8 @@
     height: 10%;
     border-style: none;
     border-radius: 10px;
-    color: #07f49e;
-    background-color: #42047e;
+    color: brown;
+    background-color: #fffdd0;
     margin-top: 7%;
 }
 
@@ -61,18 +63,19 @@
 }
 
 .google {
-    text-align: center;
     margin-top: 6%;
     height: 11%;
     width: 100%;
-    color: #42047e;
-    background-color: #07f49e;
+    color: brown;
+    background-color: #fffdd0;
     border-radius: 10px;
+    display: grid;
+    place-content: center;
 }
 
 .google:hover {
-    background-color: #42047e;
-    color: #07f49e;
+    background-color: brown;
+    color: #fffdd0;
 }
 
 @media screen and (max-width:600px) {
