@@ -9,18 +9,6 @@ const Footer1 = () => {
             </div>
                 <div >
                   <b className='join neon'>Follow Us</b>  
-                  <Link to='/' className='link'>
-                  <FaInstagram className='social'></FaInstagram>
-                  </Link>
-                  <Link to='/' className='link'>
-                    <FaGithub className='social'></FaGithub>
-                  </Link>
-                  <Link to='/' className='link'>
-                    <FaGlobe className='social' ></FaGlobe>
-                  </Link>
-                  <Link to='/' className='link'>
-                    <FaLinkedin className='social' ></FaLinkedin>
-                  </Link>
                 </div>
               
                 <div className='supportdiv'>
